@@ -64,10 +64,10 @@ $('.addBox').on('click', () => {
 
 })
 
-window.onbeforeunload = () => {
-   const string = JSON.stringify(hashMap)
-   localStorage.setItem('x',string)
-}
+// window.onbeforeunload = () => {
+//    const string = JSON.stringify(hashMap)
+//    localStorage.setItem('x',string)
+// }
 
 $('#mainWarp').on('keypress', (e) => {
    // console.log(e.key) //找到用户按的是哪个键 
@@ -79,20 +79,20 @@ $('#mainWarp').on('keypress', (e) => {
    }
 })
 
-window.onload = () =>{
-   function $(id){
-       return document.getElementById(id);
-   }//获取焦点
-   $("searchmain").onfocus = ()=>{
-       if($("searchmain").value == "请输入关键字~"){
-           $("searchmain").value = "";
-           $("searchmain").style.color = "#64afe0";
-       }
-   }
-   $("searchmain").onblur = ()=>{
-       if($("searchmain").value == ""){
-           $("searchmain").value = "请输入关键字~";
-           $("searchmain").style.color = "#ccc";
-       }
-   }
-}
+// window.onload = () =>{
+//    function $(id){
+//        return document.getElementById(id);
+//    }//获取焦点
+//    $("searchmain").onfocus = ()=>{
+//        if($("searchmain").value == "请输入关键字~"){
+//            $("searchmain").value = "";
+//            $("searchmain").style.color = "#64afe0";
+//        }
+//    }
+//    $("searchmain").onblur = ()=>{
+//        if($("searchmain").value == ""){
+//            $("searchmain").value = "请输入关键字~";
+//            $("searchmain").style.color = "#ccc";
+//        }
+//    }
+// }
