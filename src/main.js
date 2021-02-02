@@ -74,7 +74,7 @@ $('#mainWarp').on('keypress', (e) => {
    const {key} = e //相当于const key = key.e
    for (let i = 0; i < hashMap.length; i++){
       if (hashMap[i].logo.toLowerCase() === key){
-         window.open(hashMap[i].url)
+         window.open(hashMap[i].url) //
       }
    }
 })
