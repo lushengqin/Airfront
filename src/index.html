@@ -10,11 +10,13 @@
     
 </head>
 <body>
-    <header id="header" class="headerSearch">
-        <input type="text">
-        <button class="btnred">搜索</button>
+    <header  class="headerSearch">
+        <form method="get"  action="https://www.baidu.com/s" >
+            <input type="text" placeholder="请在这里输入搜索内容" name="wd">
+            <button type="submit" class="btnred">搜索</button>
+        </form>
     </header>
-    <main id="header" class="mainWarp">
+    <main  class="mainWarp">
         <ul class="linkWarp">
             <li class="last">
                 <a href="#">
@@ -28,7 +30,6 @@
             </li>
         </ul>
     </main>
-
     <script src="main.js"></script>
 </body>
 </html>

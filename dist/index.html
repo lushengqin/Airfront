@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <title>前航 - 前端导航项目</title>
-    <link rel="stylesheet" href="style.a5f4370e.css">
+    <link rel="stylesheet" href="style.7346cfec.css">
     <script src="iconfont.904bb8d7.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 </head>
 <body>
-    <header id="header" class="headerSearch">
-        <input type="text">
-        <button class="btnred">搜索</button>
+    <header class="headerSearch">
+        <form method="get" action="https://www.baidu.com/s">
+            <input type="text" placeholder="请在这里输入搜索内容" name="wd">
+            <button type="submit" class="btnred">搜索</button>
+        </form>
     </header>
-    <main id="header" class="mainWarp">
+    <main class="mainWarp">
         <ul class="linkWarp">
             <li class="last">
                 <a href="#">
@@ -28,7 +30,6 @@
             </li>
         </ul>
     </main>
-
     <script src="main.192f404d.js"></script>
 </body>
 </html>

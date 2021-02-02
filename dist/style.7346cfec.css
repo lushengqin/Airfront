@@ -30,7 +30,6 @@ a {
         background-color: #f8f8f8;
     }
     .headerSearch{
-        display: flex;
         margin: 20px;
         height: 36px;
     }
@@ -53,9 +52,7 @@ a {
         width: 40%;
         margin: 80px;
         margin-left: 30%;
-        display: flex;
         height: 36px;
-       
     }
     .mainWarp{
         width: 85%;
@@ -71,8 +68,14 @@ a {
 }
 
 /* header内容 */
+.headerSearch> form{
+  width: 100%;
+ height: 36px;
+ display: flex;
+ 
+}
 
-.headerSearch > input {
+.headerSearch  input {
   flex: 1;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -80,14 +83,18 @@ a {
   background-color: #fff;
   padding-left: 20px;
   padding-right: 20px;
+  height: inherit;
+
 }
 
 
-.headerSearch > input:focus {
+
+.headerSearch  input:focus,
+button:focus {
   outline: 0;
 }
 
-.headerSearch > button {
+.headerSearch  button {
   white-space: nowrap;
   padding: 0 20px;
   border: 0;
@@ -96,6 +103,7 @@ a {
   background-color: red;
   font-size: 16px;
   line-height: 16px;
+  height: inherit;
 }
 
 /* 重要内容 */
@@ -107,7 +115,7 @@ a {
   
 }
 
-.linkWarp > li {
+.linkWarp  li {
   width: 160px;
   background-color: #fff;
   margin-bottom: 10px;
@@ -164,4 +172,4 @@ a {
 
 
 
-/*# sourceMappingURL=style.a5f4370e.css.map */
+/*# sourceMappingURL=style.7346cfec.css.map */
