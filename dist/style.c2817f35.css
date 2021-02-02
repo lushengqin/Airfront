@@ -40,7 +40,13 @@ a {
     .linkWarp {
         justify-content: space-between;
       }
-    
+      .linkWarp .close{
+        font-size: 20px;
+        color: #999;
+        position: absolute;
+        top: 0px;
+        right: 5px;
+      }
 }
 
 
@@ -64,6 +70,19 @@ a {
       }
       .linkWarp >li{
           margin-right: 20px;
+      }
+
+      .linkWarp .close{
+        display: none;
+        font-size: 20px;
+        color: #999;
+        position: absolute;
+        top: 0px;
+        right: 5px;
+      }
+      
+      .linkWarp > li:hover .close{
+        display: inline-block;
       }
 }
 
@@ -124,18 +143,7 @@ button:focus {
   position: relative;
 }
 
-.linkWarp .close{
-  display: none;
-  font-size: 20px;
-  color: #666;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
 
-.linkWarp > li:hover .close{
-  display: inline-block;
-}
 .listBox,
 .addBox {
   width: 160px;
@@ -172,4 +180,4 @@ button:focus {
 
 
 
-/*# sourceMappingURL=style.7346cfec.css.map */
+/*# sourceMappingURL=style.c2817f35.css.map */
