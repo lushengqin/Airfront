@@ -69,7 +69,7 @@ window.onbeforeunload = () => {
    localStorage.setItem('x',string)
 }
 
-$(document).on('keypress', (e) => {
+$('#mainWarp').on('keypress', (e) => {
    // console.log(e.key) //找到用户按的是哪个键 
    const {key} = e //相当于const key = key.e
    for (let i = 0; i < hashMap.length; i++){
@@ -78,3 +78,21 @@ $(document).on('keypress', (e) => {
       }
    }
 })
+
+window.onload = () =>{
+   function $(id){
+       return document.getElementById(id);
+   }//获取焦点
+   $("searchmain").onfocus = ()=>{
+       if($("searchmain").value == "请输入关键字~"){
+           $("searchmain").value = "";
+           $("searchmain").style.color = "#64afe0";
+       }
+   }
+   $("searchmain").onblur = ()=>{
+       if($("searchmain").value == ""){
+           $("searchmain").value = "请输入关键字~";
+           $("searchmain").style.color = "#ccc";
+       }
+   }
+}
