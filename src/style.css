@@ -42,7 +42,7 @@ a {
       }
       .linkWarp .close{
         font-size: 20px;
-        color: #999;
+        color: #eee;
         position: absolute;
         top: 0px;
         right: 5px;
@@ -75,7 +75,7 @@ a {
       .linkWarp .close{
         display: none;
         font-size: 20px;
-        color: #999;
+        color: #eee;
         position: absolute;
         top: 0px;
         right: 5px;
