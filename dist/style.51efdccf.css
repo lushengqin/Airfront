@@ -42,7 +42,7 @@ a {
       }
       .linkWarp .close{
         font-size: 20px;
-        color: #999;
+        color: #eee;
         position: absolute;
         top: 0px;
         right: 5px;
@@ -75,7 +75,7 @@ a {
       .linkWarp .close{
         display: none;
         font-size: 20px;
-        color: #999;
+        color: #eee;
         position: absolute;
         top: 0px;
         right: 5px;
@@ -169,7 +169,7 @@ button:focus {
 .addBox > .icon{
     width: 55px;
     height: 55px;
-    line-height: 58px;
+    height: 64px;
 }
 
 .listBox > .link ,
@@ -180,4 +180,4 @@ button:focus {
 
 
 
-/*# sourceMappingURL=style.c2817f35.css.map */
+/*# sourceMappingURL=style.51efdccf.css.map */

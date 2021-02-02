@@ -171,12 +171,10 @@ $('.addBox').on('click', function () {
     url: url
   });
   render();
-});
-
-window.onbeforeunload = function () {
-  var string = JSON.stringify(hashMap);
-  localStorage.setItem('x', string);
-};
+}); // window.onbeforeunload = () => {
+//    const string = JSON.stringify(hashMap)
+//    localStorage.setItem('x',string)
+// }
 
 $('#mainWarp').on('keypress', function (e) {
   // console.log(e.key) //找到用户按的是哪个键 
@@ -187,27 +185,22 @@ $('#mainWarp').on('keypress', function (e) {
       window.open(hashMap[i].url); //
     }
   }
-});
-
-window.onload = function () {
-  function $(id) {
-    return document.getElementById(id);
-  } //获取焦点
-
-
-  $("searchmain").onfocus = function () {
-    if ($("searchmain").value == "请输入关键字~") {
-      $("searchmain").value = "";
-      $("searchmain").style.color = "#64afe0";
-    }
-  };
-
-  $("searchmain").onblur = function () {
-    if ($("searchmain").value == "") {
-      $("searchmain").value = "请输入关键字~";
-      $("searchmain").style.color = "#ccc";
-    }
-  };
-};
+}); // window.onload = () =>{
+//    function $(id){
+//        return document.getElementById(id);
+//    }//获取焦点
+//    $("searchmain").onfocus = ()=>{
+//        if($("searchmain").value == "请输入关键字~"){
+//            $("searchmain").value = "";
+//            $("searchmain").style.color = "#64afe0";
+//        }
+//    }
+//    $("searchmain").onblur = ()=>{
+//        if($("searchmain").value == ""){
+//            $("searchmain").value = "请输入关键字~";
+//            $("searchmain").style.color = "#ccc";
+//        }
+//    }
+// }
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.7f92441c.js.map
+//# sourceMappingURL=main.99bfa52f.js.map
