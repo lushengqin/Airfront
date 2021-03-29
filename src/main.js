@@ -64,10 +64,10 @@ $('.addBox').on('click', () => {
 
 })
 
-// window.onbeforeunload = () => {
-//    const string = JSON.stringify(hashMap)
-//    localStorage.setItem('x',string)
-// }
+window.onbeforeunload = () => {
+   const string = JSON.stringify(hashMap)
+   localStorage.setItem('x',string)
+}
 
 $('#mainWarp').on('keypress', (e) => {
    // console.log(e.key) //找到用户按的是哪个键 

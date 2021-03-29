@@ -171,10 +171,12 @@ $('.addBox').on('click', function () {
     url: url
   });
   render();
-}); // window.onbeforeunload = () => {
-//    const string = JSON.stringify(hashMap)
-//    localStorage.setItem('x',string)
-// }
+});
+
+window.onbeforeunload = function () {
+  var string = JSON.stringify(hashMap);
+  localStorage.setItem('x', string);
+};
 
 $('#mainWarp').on('keypress', function (e) {
   // console.log(e.key) //找到用户按的是哪个键 
@@ -203,4 +205,4 @@ $('#mainWarp').on('keypress', function (e) {
 //    }
 // }
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.99bfa52f.js.map
+//# sourceMappingURL=main.571db1cd.js.map
