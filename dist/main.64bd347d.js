@@ -127,14 +127,14 @@ var xObject = JSON.parse(x);
 console.log(x);
 console.log(xObject);
 var hashMap = xObject || [{
-  logo: 'A',
-  url: 'https://www.acfun.cn'
+  logo: 'j',
+  url: 'https://www.jianshu.com/u/7f68f0334d18'
 }, {
-  logo: 'b',
-  url: 'https://bilibili.com'
+  logo: 'g',
+  url: 'https://github.com/lushengqin'
 }, {
   logo: 'c',
-  url: 'https://caobao.com'
+  url: 'https://www.iconfont.cn/'
 }];
 
 var remove = function remove(url) {
@@ -205,4 +205,4 @@ $('#mainWarp').on('keypress', function (e) {
 //    }
 // }
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.571db1cd.js.map
+//# sourceMappingURL=main.64bd347d.js.map
