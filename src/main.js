@@ -79,20 +79,20 @@ $('#mainWarp').on('keypress', (e) => {
    }
 })
 
-// window.onload = () =>{
-//    function $(id){
-//        return document.getElementById(id);
-//    }//获取焦点
-//    $("searchmain").onfocus = ()=>{
-//        if($("searchmain").value == "请输入关键字~"){
-//            $("searchmain").value = "";
-//            $("searchmain").style.color = "#64afe0";
-//        }
-//    }
-//    $("searchmain").onblur = ()=>{
-//        if($("searchmain").value == ""){
-//            $("searchmain").value = "请输入关键字~";
-//            $("searchmain").style.color = "#ccc";
-//        }
-//    }
-// }
+window.onload = () =>{
+   function $(id){
+       return document.getElementById(id);
+   }//获取焦点
+   $("searchmain").onfocus = ()=>{
+       if($("searchmain").value == "请输入关键字~"){
+           $("searchmain").value = "";
+           $("searchmain").style.color = "#64afe0";
+       }
+   }
+   $("searchmain").onblur = ()=>{
+       if($("searchmain").value == ""){
+           $("searchmain").value = "请输入关键字~";
+           $("searchmain").style.color = "#ccc";
+       }
+   }
+}
